@@ -1,0 +1,53 @@
+<p id="notice"><%= notice %></p>
+
+<h1>
+  <strong>Title:</strong>
+  <%= @course.title %>
+</h1>
+
+<p>
+  <strong>Description:</strong>
+  <%= @course.description %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @course.user_id %>
+</p>
+
+<p>
+  <strong>Forum:</strong>
+  <%= @course.forum_id %>
+</p>
+
+<div class="container-fluid bg-3 text-center">    
+  <div class="row">
+    <div class="col-sm-6">
+      <h3>Take a QUIZ</h3>
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-6">
+      <h3>Watch VIDEO</h3>
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <h3>View Documents</h3>
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-6">
+      <h3>Join FORUM</h3>
+      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+  </div>
+</div>
+
+<br>
+<div class="panel panel-default">
+  <div class="panel-footer">
+    <%= link_to 'Edit', edit_course_path(@course) %> |
+    <%= link_to 'Back', courses_path %>
+  </div>
+</div>
+
